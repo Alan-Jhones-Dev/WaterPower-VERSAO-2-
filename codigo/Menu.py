@@ -11,7 +11,7 @@ from codigo.Const import COLOR_BLUE, COLOR_SEA_BLUE, WIN_WIDTH, MENU_OPTION, COL
 class Menu:
         def __init__(self, window):
             self.window = window
-            self.surf = pygame.image.load('asset/menuBg.png')
+            self.surf = pygame.image.load('asset/menuBg.png').convert_alpha()
             self.rect = self.surf.get_rect(left=0, top=0)
 
         def run(self):
